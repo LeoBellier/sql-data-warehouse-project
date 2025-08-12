@@ -55,7 +55,6 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
 
 ## 📂 Repository Structure
 ```
@@ -65,8 +64,8 @@ data-warehouse-project/
 │
 ├── docs/                               # Project documentation and architecture details
 │   ├── DataWareHouse.png               # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│   ├── data_flow.png                   # Visual representation of the data flow through the warehouse
+│   ├── data_model.drawio.png           # Overview of the data model, including relationships and schema
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
 │   ├── bronze/                         # Scripts for extracting and loading raw data
