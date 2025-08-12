@@ -26,12 +26,12 @@ create view gold.dim_product as
 select
     row_number() over (order by pn.prd_start_dt, pn.prd_key) as product_key,
     pn.prd_id as product_id,
-    pn.cat_id as category_id,
-    pc.cat as product_category,
-    pc.subcat as product_subcategory,
-    pc.manteinance,
     pn.prd_key as product_number,
     pn.prd_name as product_name,
+    pn.cat_id as category_id,
+    pc.cat as category,
+    pc.subcat as subcategory,
+    pc.manteinance,
     pn.prd_cost as product_cost,
     pn.prd_line as product_line,
     pn.prd_start_dt as product_start_date
